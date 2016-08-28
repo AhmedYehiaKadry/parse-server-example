@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_qbs135zh:3maikc57c8c50tvi5i95ainjs5@ds033015.mlab.com:33015/heroku_qbs135zh',
+  databaseURI: databaseUri || 'mongodb://heroku_cw6pdt5m:ntokt80c9hudmtr23nlnhvrqjf@ds017726.mlab.com:17726/heroku_cw6pdt5m',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'InstaKadry',
-  masterKey: process.env.MASTER_KEY || 'instakadrymasterkey', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://yourappname.herokuapp.com/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'instaKadry871993',
+  masterKey: process.env.MASTER_KEY || 'klnjnsbaibBHbkdbv872t8723yu98', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://instakadry.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
